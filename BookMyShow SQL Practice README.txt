@@ -158,7 +158,7 @@ SELECT
     s.show_date,
     s.show_time,
     s.screen_type
-FROM Show s
+FROM MovieShow s
 JOIN Movie m ON s.movie_id = m.movie_id
 JOIN Theatre t ON s.theatre_id = t.theatre_id
 WHERE s.show_date = '2023-04-26'
@@ -173,7 +173,7 @@ SELECT
     s.show_date,
     s.show_time,
     s.screen_type
-FROM Show s
+FROM MovieShow s
 JOIN Movie m ON s.movie_id = m.movie_id
 JOIN Theatre t ON s.theatre_id = t.theatre_id
 WHERE m.movie_name = 'Avatar: The Way of Water'
@@ -190,6 +190,7 @@ How to Use
 4)Insert the sample data into tables.
 
 5)Run the queries to fetch shows by theatre and date.
+
 
 
 
